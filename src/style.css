@@ -11,6 +11,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-orange: #ff6702;
+  --text-color: #291100;
+}
+.didact-gothic-regular {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
@@ -25,9 +33,21 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  inline-size: 100%;
+  min-block-size: 40px;
+  background-color: var(--color-orange);
+  color: var(--text-color);
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -36,11 +56,11 @@ h1 {
 }
 
 #app {
-  /* display: contents; */
-  max-width: 1280px;
+  display: contents;
+  /* max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center; 
+  text-align: center;  */
 }
 
 .logo {
